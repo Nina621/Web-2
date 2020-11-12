@@ -1,0 +1,135 @@
+
+       /*Postavljanje slike i fonta*/
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic';
+            background-image: url(n.jpg);
+            background-size: cover;
+        }
+
+
+        .class2 {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        .class {
+            float: left;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        .class2 .inputBox {
+            display: inline-block;
+        }
+
+        .class .inputBox {
+            display: inline-block;
+        }
+
+        /*Posavljanje gumbova bez obruba*/
+        .class2 a {
+            text-decoration: none;
+            color: #000000;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+            /*boja*/
+            .class2 a:hover {
+                background-color: #808080;
+                color: #ffffff;
+            }
+
+        /*Posavljanje gumbova bez obruba*/
+        .class a {
+            text-decoration: none;
+            color: #000000;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+            /*boja*/
+            .class a:hover {
+                background-color: #808080;
+                color: #ffffff;
+            }
+
+        /*Centriranje*/
+        .log {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /*Bijela pozadina sa sjenom*/
+            width: 300px;
+            padding: 30px;
+            background: rgba(128, 128, 128, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0px 15px 25px rgba(0,0,0,2);
+            border-radius:10px;
+        }
+
+        .log h2{
+            margin:0 0 30px;
+            padding:0;
+            color:#000000;
+            text-align:center;
+        }
+
+        .log .inputLog{
+            position:relative;
+        }
+
+        .log .inputLog input{
+            width:100%;
+            padding:10px 0;
+            font-size:16px;
+            color:#000000;
+            margin-bottom:30px;
+            /*Postavljanje obruba*/
+            border:none;
+            border-bottom:1px solid #000000;
+            outline:none;
+            background:transparent;
+        }
+        /* Pozicjoniranje Username-a i passworda iznad*/
+            .log .inputLog label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #000000;
+                pointer-events:none;
+                transition:.5s;
+            }
+            /*Pomicanje Username-a i passworda unutra prilikom  klika*/
+            .log .inputLog input:focus ~ label,
+            /*Koristim valid da prilikom unosa ne poklapaju se ime i lozinka*/
+            .log .inputLog input:valid ~ label{
+            top:-18px;
+            left:0;
+            color:#B266FF;
+            font-size:14px;
+            }
+            /*postavljanje gumba*/
+            .log input[type="submit"]{
+                background:transparent;
+                border:none;
+                outline:none;
+                color:#000000;
+                background:#808080;
+                padding:5px 12px;
+                cursor:pointer;
+                border-radius:5px;
+            }
+
+            /*postavljanje boje na gumb*/
+        .log input[type="submit"]:hover {
+            background-color:#ffffff;
+        }
